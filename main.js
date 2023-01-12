@@ -53,7 +53,7 @@ cars.forEach(function(e){
 			add.appendChild(mile);
 			
 		let caricon=document.createElement("i");
-			caricon.setAttribute("class","bi bi-car")
+			caricon.setAttribute("class","fa-thin fa-car");
 			mile.appendChild(caricon);
 			
 		let mileage=document.createElement("span");
@@ -64,7 +64,7 @@ cars.forEach(function(e){
 			add.appendChild(fuel);
 			
 		let fuelicon=document.createElement("i");
-			fuelicon.setAttribute("class","bi bi-car")
+			fuelicon.setAttribute("class","fa-solid  fa-car");
 			fuel.appendChild(fuelicon);
 			
 		let fu=document.createElement("span");
@@ -75,7 +75,7 @@ cars.forEach(function(e){
 			add.appendChild(safety);
 			
 		let safeicon=document.createElement("i");
-			safeicon.setAttribute("class","bi bi-car")
+			safeicon.setAttribute("class","fa-thin fa-car");
 			safety.appendChild(safeicon);
 			
 		let safe=document.createElement("span");
