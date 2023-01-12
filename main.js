@@ -1,8 +1,12 @@
 let cars=[{
 	id:1,
-	imgurl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3gqSTsdJSp8c3kBNqvpWe2kcKtFIcEWXcYA&usqp=CAU",
+	imgurl1:"img/white.jpg",
+	imgurl2:"img/blue.jpg",
+	imgurl3:"img/gray.jpg",
 	vihicle:"car",
-	name:"Mercedez Benz c300 2022",
+	name:"BMW 6 Series GT White",
+	name2:"BMW 6 Series GT Blue",
+	name3:"BMW 6 Series GT Gray",
 	mileage:"Mileage:4,000 miles",
 	fuel:"Fuel:25mpg",
 	safe:"safety:",
@@ -23,7 +27,7 @@ cars.forEach(function(e){
 		card.appendChild(rows);
 		
 	let img=document.createElement("img");
-		img.src=e.imgurl;
+		img.src=e.imgurl1;
 		rows.appendChild(img);
 		
 		//next div
@@ -79,23 +83,23 @@ cars.forEach(function(e){
 			safety.appendChild(safe);
 			
 			let staricon=document.createElement("i");
-			staricon.setAttribute("class","bi bi-star")
+			staricon.setAttribute("class","bi bi-star-fill")
 			safety.appendChild(staricon);
 			
 			let staricon2=document.createElement("i");
-			staricon2.setAttribute("class","bi bi-star")
+			staricon2.setAttribute("class","bi bi-star-fill")
 			safety.appendChild(staricon2);
 			
 			let staricon3=document.createElement("i");
-			staricon3.setAttribute("class","bi bi-star")
+			staricon3.setAttribute("class","bi bi-star-fill")
 			safety.appendChild(staricon3);
 			
 			let staricon4=document.createElement("i");
-			staricon4.setAttribute("class","bi bi-star")
+			staricon4.setAttribute("class","bi bi-star-fill")
 			safety.appendChild(staricon4);
 			
 			let staricon5=document.createElement("i");
-			staricon5.setAttribute("class","bi bi-star")
+			staricon5.setAttribute("class","bi bi-star-fill")
 			safety.appendChild(staricon5);
 			
 			
@@ -139,4 +143,22 @@ cars.forEach(function(e){
 			cart.setAttribute("class","car-cart");
 			cart.innerText=e.cart;
 			addto.appendChild(cart);
+			
+			
+			
+			btn1.addEventListener("click",function(){
+				img.src=e.imgurl1;
+				name.innerText=e.name;
+				
+			});
+			
+			btn2.addEventListener("click",function(){
+				img.src=e.imgurl2;
+				name.innerText=e.name2;
+			});
+			
+			btn3.addEventListener("click",function(){
+				img.src=e.imgurl3;
+				name.innerText=e.name3;
+			});
 })
